@@ -61,7 +61,7 @@ with schemdraw.Drawing() as d:
     d += flow.Terminal(w = 8).label(label9).drop('S').color('white').fill('purple').zorder(10)
     d += flow.Arrow().down()
 
-    label10 = "Spec. Atten \n Rainfall"
+    label10 = "Z-S and Polarimetric Snowfall"
     d += flow.Terminal(w = 8).label(label10).drop('S').color('white').fill('purple').zorder(10)
     d += flow.Arrow().down()
 
