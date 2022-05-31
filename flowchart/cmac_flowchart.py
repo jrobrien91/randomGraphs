@@ -61,7 +61,7 @@ with schemdraw.Drawing() as d:
     d += flow.Terminal(w = 8).label(label9).drop('S').color('white').fill('purple').zorder(10)
     d += flow.Arrow().down()
 
-    label10 = "Spec. Atten \n Rainfall"
+    label10 = "Z-S and Polarimetric Snowfall"
     d += flow.Terminal(w = 8).label(label10).drop('S').color('white').fill('purple').zorder(10)
     d += flow.Arrow().down()
 
@@ -79,13 +79,13 @@ with schemdraw.Drawing() as d:
     d += flow.Process(w = 8).label(label14).color('black').fill('thistle').at([-10, -6.0]).zorder(1)
 
     # add additional main lines
-    d += flow.Wire(arrow='->').at((3.8, -3.25)).to((3.8, -26.75)).color('green')
-    d += flow.Wire(arrow='->').at((4.2, -3.25)).to((4.2, -26.75)).color('red')
+    d += flow.Wire(arrow='->').at((3.8, -5.5)).to((3.8, -26.75)).color('green')
+    d += flow.Wire(arrow='->').at((4.2, -5.5)).to((4.2, -26.75)).color('red')
     d += flow.Wire(arrow='->').at((4.4, -7.75)).to((4.4, -26.75)).color('blue')
     d += flow.Wire(arrow='->').at((4.6, -10.0)).to((4.6, -26.75)).color('purple')
     d += flow.Wire(arrow='->').at((3.6, -12.25)).to((3.6, -26.75)).color('cyan')
     d += flow.Wire(arrow='->').at((3.4, -16.75)).to((3.4, -26.75)).color('peru')
-    d += flow.Wire(arrow='->').at((4.8, -14.5)).to((4.8, -26.75)).color('pink')
+    d += flow.Wire(arrow='->').at((4.8, -14.5)).to((4.8, -26.75)).color('magenta')
     d += flow.Wire(arrow='->').at((5.0, -21.25)).to((5.0, -26.75)).color('brown')
     d += flow.Wire(arrow='->').at((5.2, -23.5)).to((5.2, -26.75)).color('lime')
 
@@ -126,9 +126,9 @@ with schemdraw.Drawing() as d:
     d += flow.Wire().at((8.0, -16.5)).to((9.5, -16.5)).color('peru')
     d += flow.Wire().at((9.5, -16.5)).to((9.5, -18.25)).color('peru')
     # pink
-    d += flow.Wire().at((8.0, -16.25)).to((9.5, -16.25)).color('pink')
-    d += flow.Wire().at((8.0, -14.25)).to((9.5, -14.25)).color('pink')
-    d += flow.Wire().at((9.5, -14.25)).to((9.5, -16.25)).color('pink')
+    d += flow.Wire().at((8.0, -16.25)).to((9.5, -16.25)).color('magenta')
+    d += flow.Wire().at((8.0, -14.25)).to((9.5, -14.25)).color('magenta')
+    d += flow.Wire().at((9.5, -14.25)).to((9.5, -16.25)).color('magenta')
 
     # Connect the final boxes
     d += flow.Wire(arrow='->').at((8.0, -25.20)).to((14.0, -25.20)).color('black')

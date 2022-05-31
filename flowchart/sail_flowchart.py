@@ -15,7 +15,7 @@ import schemdraw
 from schemdraw import flow
 
 with schemdraw.Drawing() as d:
-    d.config(fontsize=12, unit=1.0)
+    d.config(fontsize=11, unit=1.0)
     # Terminal to Show the Start of the Diagram
     label0 = "1. CSU X-Band Radar \n\n Single File per Scan"
     d += flow.Terminal().label(label0)
@@ -27,15 +27,19 @@ with schemdraw.Drawing() as d:
     d += flow.Arrow().right()
 
     # data-in/data-out rhomboid container
-    label2 = "3. Quality Control \n\n CMAC2.0 \n Clutter Removal \n Obstruction Removal"
+    label2 = "3. Radar Corrections \n\n CMAC2.0 \n Clutter Removal \n Obstruction Removal"
     d += flow.Data().label(label2).drop('E')
     d += flow.Arrow().right()
 
     # Round Processes Container
     label3 = "4. Py-ART Column Extraction \n\n Per Instrumented Location"
-    d += flow.RoundProcess().label(label3).drop('S')
+    d += flow.RoundProcess().label(label3).drop('E')
+    d += flow.Arrow().right()
+
+    # Square Processes Container
+    label4 = "5. Matched Datasets \n\n CSU X-Band Radar Gate \n Collocated with \n Ground Instrumentation"
+    d += flow.Process().label(label4).drop('S')
     d += flow.Arrow().down()
 
-    # End Terminal to show end of the flow chart
-    label4 = "5. Matched Datasets \n\n CSU X-Band Radar Gate \n Collocated with \n Ground Instrumentation"
-    d += flow.Terminal().label(label4)
+    label5 = "6. Estimated \n Snowfall Retrevial"
+    d += flow.Terminal().label(label5)
