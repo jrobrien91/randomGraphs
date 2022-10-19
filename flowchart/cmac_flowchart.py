@@ -15,7 +15,7 @@ import schemdraw
 from schemdraw import flow
 
 with schemdraw.Drawing() as d:
-    d.config(fontsize=7, unit=1.0)
+    d.config(fontsize=16, unit=1.0)
     # Rectangle To Start
     label0 = "1-3 Months of Staged Data"
     d += flow.Process(w = 8).label(label0).drop('S').color('black').fill('thistle').zorder(10)
@@ -69,7 +69,7 @@ with schemdraw.Drawing() as d:
     d += flow.Terminal(w = 8).label(label11).drop('S').color('white').fill('purple').zorder(10)
     d += flow.Arrow().down()
 
-    label12 = "1-3 Months of Staged \nCMAC2.0"
+    label12 = "1-3 Months of Staged \nCMAC"
     d += flow.Process(w = 8).label(label12).color('black').fill('thistle').zorder(10)
 
     # additional side point
