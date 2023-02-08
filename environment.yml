@@ -1,14 +1,32 @@
 name: graphs
 
 dependencies:
-- python
+- python=3.9
+- arm_pyart
+- act-atmos
 - matplotlib
-- networkx>=2.6.3
+- hvplot
+- ipython
+- notebook
+- jupyterlab
+- holoviews
+- geoviews
+- cartopy
 - numpy
+- dask
+- dask-labextension
+- distributed
+- xarray
+- xradar
 - pandas>=1.3.4
+- datashader
+- geopandas
+- xmovie
+- fiona
+- ffmpeg
+- networkx>=2.6.3
 - plotly
 - pip
 - pip:
-  - IPython
   - pydot
   - schemdraw
