@@ -29,6 +29,7 @@ dependencies:
   - ffmpeg
   - networkx>=2.6.3
   - plotly
+  - satpy
   - pip
   - pip:
     - pydot
