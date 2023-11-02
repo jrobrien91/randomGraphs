@@ -1,10 +1,10 @@
-name: graphs
+name: random-graphs
 channels:
   - conda-forge
   - defaults
   - pyviz
 dependencies:
-  - python=3.9
+  - python
   - arm_pyart
   - act-atmos
   - matplotlib
@@ -30,6 +30,7 @@ dependencies:
   - networkx>=2.6.3
   - plotly
   - satpy
+  - metpy
   - pip
   - pip:
     - pydot
